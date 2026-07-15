@@ -16,6 +16,7 @@ PDF and card database.
 |---|---|
 | `references/` | Rules summaries and source-derived constraints. |
 | `templates/` | Reusable deck profile format. |
+| `scripts/` | Validation tooling. Run `python3 scripts/validate_decks.py` after any deck change — it checks 40/12 counts, name↔ID pairs against the card database, copy limits, banned cards, and the 3-signature/champion-tag rule. |
 | `decks/beginner/` | Low-complexity decks with clear play patterns. |
 | `decks/synergy/` | Focused archetype decks built around strong card interactions. |
 | `decks/advanced/` | Higher-complexity decks with sequencing, reactions, or layered engines. |

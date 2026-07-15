@@ -10,7 +10,7 @@
 | Chosen champion | Rumble - Scrapper |
 | Main deck size | 40 |
 | Rune deck | 12 |
-| Signature cards | None |
+| Signature cards | `Danger Zone` (3) |
 | Difficulty | Medium |
 | Core plan | Flood the board with Mech tokens, buff them as a type with the Legend's Shield and the chosen champion's +1 Might, and grind out combat with defenders that get stronger every fight. |
 
@@ -29,11 +29,17 @@ tight core surrounded by generic support.
 ## Legality Notes
 
 - Domain identity: Rumble - Mechanized Menace is Fury/Mind. Every main deck
-  card is single-domain Fury, single-domain Mind, or one of the two dual
-  Fury/Mind cards (`Danger Zone`, `Curtain Call`).
+  card is single-domain Fury, single-domain Mind, or the dual Fury/Mind
+  Signature card `Danger Zone`.
 - Copy-limit check: `Rumble - Scrapper` has 1 chosen-champion copy plus 2
   main deck copies (3 total). No other card exceeds 3 copies.
-- Signature check: no signature cards are included.
+- Signature check: `Danger Zone` (SFD-182) is a Signature card — it is
+  Rumble's own signature (printed directly after the Legend, SFD-181), so
+  3 copies sit exactly at the 3-signature limit and match the Legend's
+  tag. An earlier revision also ran 2 copies of `Curtain Call` (UNL-182),
+  which is Jhin's signature and never matched Rumble's tag; it was
+  replaced with `Upstage Comedy` when `scripts/validate_decks.py` caught
+  the 5-signature overrun.
 - Banned/errata check: no card used here is marked banned in the local card
   database.
 - Champion tag: `Rumble - Scrapper` is inferred to carry the `Rumble`
@@ -78,7 +84,7 @@ tight core surrounded by generic support.
 | 2 | Hextech Ray | OGN-009 | Spell | 1 |
 | 2 | Void Seeker | OGN-024 | Spell | 3 |
 | 2 | Incinerate | OGS-003 | Spell | 2 |
-| 2 | Curtain Call | UNL-182 | Spell | 4 |
+| 2 | Upstage Comedy | UNL-009 | Spell | 2 |
 | 2 | Bellows Breath | SFD-080 | Spell | 1 |
 | 2 | Premonition | SFD-087 | Spell | 2 |
 
@@ -97,9 +103,9 @@ Rune deck total: **12**
 
 | Card | Card ID | Why it fits |
 |---|---|---|
-| Marai Spire | SFD-211 | Friendly Repeat costs cost 1 Energy less, cheapening `Danger Zone`, `Curtain Call`, and `Bellows Breath`'s repeat clauses. |
+| Marai Spire | SFD-211 | Friendly Repeat costs cost 1 Energy less, cheapening `Danger Zone`, `Upstage Comedy`, and `Bellows Breath`'s repeat clauses. |
 | Ornn's Forge | SFD-213 | The first friendly non-token gear each turn costs 1 Energy less, discounting `Assembly Rig`. |
-| Forgotten Library | UNL-211 | Predicts off any spell that costs 4+ Energy, smoothing draws from `Production Surge` or `Curtain Call`. |
+| Forgotten Library | UNL-211 | Predicts off any spell where you spend 4+ Energy, smoothing draws from `Production Surge` or a repeated `Upstage Comedy`. |
 
 ## Card Info
 
@@ -121,7 +127,7 @@ Rune deck total: **12**
 | Hextech Ray | Spell | 1 | | [Action]. Deal 3 to a unit at a battlefield. | Efficient removal. |
 | Void Seeker | Spell | 3 | | [Action]. Deal 4 to a unit at a battlefield. Draw 1. | Removal that replaces itself. |
 | Incinerate | Spell | 2 | | [Action]. Deal 2 to a unit at a battlefield. | Cheap early removal. |
-| Curtain Call | Spell | 4 | | Modal, repeatable: draw, remove, or shrink a unit. | Flexible value that adapts to the board. |
+| Upstage Comedy | Spell | 2 | | [Repeat] 2 Energy. Ready a unit. | Readies a Mech to defend again (stacking with tribal Shield) or to attack twice; Repeat scales late and gets cheaper at Marai Spire. |
 | Bellows Breath | Spell | 1 | | [Action], [Repeat] 1 Energy + Mind Rune. Deal 1 to up to three units at a location. | Cheap, repeatable board control against small tokens. |
 | Premonition | Spell | 2 | | [Reaction]. Draw 3. | Big card advantage to refill after an aggressive curve. |
 
@@ -139,7 +145,7 @@ Rune deck total: **12**
    battlefield.
 3. Use `Bubble Bot` to double up a Mech's usefulness in a single turn:
    attack, then ready it to defend, or vice versa.
-4. Hold `Danger Zone` and `Curtain Call` as combat tricks; both get cheaper
+4. Hold `Danger Zone` and `Upstage Comedy` as combat tricks; both get cheaper
    with `Marai Spire` in play, letting you re-buy their effects repeatedly.
 5. Land `Breakneck Mech` once you already control another Mech — it enters
    ready and immediately makes your whole Mech board hard to target or pin

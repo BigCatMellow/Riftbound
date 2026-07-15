@@ -10,7 +10,7 @@
 | Chosen champion | Kha'Zix - Evolving Hunter |
 | Main deck size | 40 |
 | Rune deck | 12 |
-| Signature cards | None |
+| Signature cards | `Void Assault` (2) |
 | Difficulty | Medium |
 | Core plan | Bank XP from combat wins, Hunt triggers, and movement, then cash it in all at once for direct, repeatable burst damage that doesn't care what's blocking — `Kha'Zix - Evolving Hunter`'s attack trigger deals damage equal to its own Might to anything at the battlefield, no combat math required. |
 
@@ -32,10 +32,15 @@ before a casual game the same way the Legend/Domain gap suggests.
 
 - Domain identity: Kha'Zix - Voidreaver is Body/Chaos. Every main deck card
   is single-domain Body, single-domain Chaos, or the dual Body/Chaos
-  `On the Hunt`.
+  Signature card `Void Assault`.
 - Copy-limit check: `Kha'Zix - Evolving Hunter` has 1 chosen-champion copy
   plus 2 main deck copies (3 total). No other card exceeds 3 copies.
-- Signature check: no signature cards are included.
+- Signature check: `Void Assault` (UNL-202) is Kha'Zix's own signature
+  (printed directly after the Legend, UNL-201), so 2 copies are legal and
+  match the Legend's tag. An earlier revision ran `On the Hunt` (SFD-204),
+  which is Sivir's signature and never matched Kha'Zix's tag; it was
+  swapped for `Void Assault` when `scripts/validate_decks.py` caught the
+  mismatch.
 - Banned/errata check: no card used here is marked banned in the local card
   database.
 - Champion tag: `Kha'Zix - Evolving Hunter` is inferred to carry the
@@ -76,7 +81,7 @@ before a casual game the same way the Legend/Domain gap suggests.
 | 3 | Grim Resolve | UNL-095 | Spell | 2 |
 | 2 | Stare Down | UNL-107 | Spell | 2 |
 | 3 | Concentrate | UNL-091 | Spell | 5 |
-| 2 | On the Hunt | SFD-204 | Spell | 1 |
+| 2 | Void Assault | UNL-202 | Signature Spell | 2 |
 | 1 | Conscription | UNL-140 | Spell | 5 |
 | 2 | Blood Rose | UNL-109 | Gear | 1 |
 | 2 | Insightful Investigator | UNL-135 | Unit | 3 |
@@ -119,7 +124,7 @@ Rune deck total: **12**
 | Grim Resolve | Spell | 2 | | +3 Might this turn; gain 2 XP on a win. | Combat trick that directly feeds the XP counter. |
 | Stare Down | Spell | 2 | | Bounce weaker enemies at a battlefield; gain 1 XP. | Tempo and board control that also feeds XP. |
 | Concentrate | Spell | 5 | | Draw 2; cheaper at Level 6/11. | Card advantage that gets more efficient as XP climbs. |
-| On the Hunt | Spell | 1 | | Ready your units. | Lets an attacker that already used its Kha'Zix trigger get back up to defend, or attack again after a trick. |
+| Void Assault | Signature Spell | 2 | | Move a friendly unit, then move an enemy unit. If both move to a battlefield you don't control, you're the attacker. | Manufactures a combat on demand — dragging a small enemy into your Hunt unit's battlefield sets up the win-a-combat XP triggers. |
 | Conscription | Spell | 5 | | May spend 5 XP to steal any enemy unit at a battlefield instead of only a small one. | The deck's biggest XP sink; converts banked XP directly into the opponent's best unit. |
 | Blood Rose | Gear | 1 | | Pay 1 Energy on a unit play for 1 XP. Spend 3 XP, exhaust: ready a unit. | A cheap, steady XP trickle plus a ready-effect XP sink. |
 | Insightful Investigator | Unit | 3 | 3 | On play, may pay 2 XP to make an opponent discard a chosen card. | Hand disruption paid for entirely with banked XP. |
@@ -138,8 +143,9 @@ Rune deck total: **12**
 5. Save `Conscription` for a real threat: spending 5 XP to steal any unit at
    a battlefield (instead of only a 3-Might-or-less one) is usually the
    correct line once the XP is available.
-6. Use `On the Hunt` to let `Kha'Zix - Evolving Hunter` attack, burst a unit
-   down, and still be ready to defend the same turn.
+6. Use `Void Assault` to manufacture a winnable combat on your terms: move
+   a Hunt unit and drag a small enemy unit to the same battlefield, then
+   collect the win-a-combat XP triggers.
 
 ## Mulligan
 
